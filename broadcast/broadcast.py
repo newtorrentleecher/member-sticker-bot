@@ -8,7 +8,7 @@ myclient = pymongo.MongoClient()
 database = myclient['users']
 collection = database["user"]
 
-botOwnerID = '930609632' # Replace thiswith your user id
+botOwnerID = 'BOT_OWNER'
 def broadcast(update , context ):
     chat_id = update.message.chat_id
     fname = update.effective_message
