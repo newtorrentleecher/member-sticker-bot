@@ -17,8 +17,8 @@
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps"
         },
-        "API_HAS": {
-            "description": "Your API_HASH from https://my.telegram.org/apps"
+        "DATABASE_URL ": {
+            "description": "MongoDB Database URI for Saving UserID for Broadcast."
         } 
     },
     "buildpacks": [
