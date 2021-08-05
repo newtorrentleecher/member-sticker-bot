@@ -4,9 +4,9 @@ import pymongo
 #def adduser(update, context):
 #   db(update)
 def db(data):
-    DATABASE_NAME = '' #Your Database Name here.
+    DATABASE_NAME = 'DATABASE_URL' #Your Database Name here.
     myclient = pymongo.MongoClient()
-    database = myclient[DATABASE_URL]
+    database = myclient[DATABASE_NAME]
 
     userid = data.message.chat.id
     chattype = data.message.chat.type
