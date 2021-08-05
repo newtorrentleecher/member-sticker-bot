@@ -6,7 +6,7 @@ import pymongo
 def db(data):
     DATABASE_NAME = '' #Your Database Name here.
     myclient = pymongo.MongoClient()
-    database = myclient[DATABASE_NAME]
+    database = myclient[DATABASE_URL]
 
     userid = data.message.chat.id
     chattype = data.message.chat.type
