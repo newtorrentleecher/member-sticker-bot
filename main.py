@@ -118,6 +118,17 @@ async def start_group(bot, update):
         quote=True
     )
 
+@bughunter0.on_message(filters.command(["broadcast"]) & filters.private)
+async def start_private(bot, update):
+    text = START_STRING_PRIVATE.format(update.from_user.mention)
+    reply_markup = START_BUTTON
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup,
+        quote=True
+    )
+    
 @bughunter0.on_message(filters.command(["ping"]))
 async def ping(bot, message):
     start_t = time.time()
